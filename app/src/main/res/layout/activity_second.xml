@@ -7,17 +7,17 @@
     tools:context=".SecondActivity">
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/chbFamousPerson"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="152dp"
         android:text=" famus persone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+        app:layout_constraintTop_toBottomOf="@+id/chbAnimals" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/chbAnimals"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="148dp"
@@ -32,17 +32,18 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="140dp"
         android:layout_marginEnd="172dp"
+        android:onClick="onFindClicked"
         android:text="Find"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        app:layout_constraintTop_toBottomOf="@+id/chbFruits" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/chbFruits"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="184dp"
         android:text="Fruit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+        app:layout_constraintTop_toBottomOf="@+id/chbFamousPerson" />
 </androidx.constraintlayout.widget.ConstraintLayout>
